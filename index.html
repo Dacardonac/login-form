@@ -3,9 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script defer type="module" src="./assets/scripts/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <title>Login Page</title>
 </head>
 <body>
-  
+  <main>
+    <section class="container">
+      <article class="container__form">
+        <form action="" class="form sign-in">
+          <h2 class="form__title">Iniciar sesicon</h2>
+          <div class="form__social">
+            <ion-icon class="form__social-icons" name="logo-google"></ion-icon>
+            <ion-icon class="form__social-icons" name="logo-facebook"></ion-icon>
+            <ion-icon class="form__social-icons" name="logo-apple"></ion-icon>
+          </div>
+          <span class="form__text">O Ingrese su correo y contraseña</span>
+          <div class="form__inputs">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input class="form__inputs-input" type="text" placeholder="Email">
+          </div>
+          <div class="form__inputs">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input class="form__inputs-input" type="password" placeholder="Password">
+          </div>
+          <a class="form__recovery" href="#">¿Olvidaste tu contraseña?</a>
+          <button class="form__buttons">INICIAR SESIÓN</button>
+        </form>
+      </article>
+      <article class="container__form">
+        <form action="" class="form sign-up">
+          <h2 class="form__title">Registrarse</h2>
+          <div class="form__social">
+            <ion-icon class="form__social-icons" name="logo-google"></ion-icon>
+            <ion-icon class="form__social-icons" name="logo-facebook"></ion-icon>
+            <ion-icon class="form__social-icons" name="logo-apple"></ion-icon>
+          </div>
+          <span class="form__text">O Use su correo electronico para registrarse</span>
+          <div class="form__inputs">
+            <ion-icon name="person-outline"></ion-icon>
+            <input class="form__inputs-input" type="text" placeholder="Username">
+          </div>
+          <div class="form__inputs">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input class="form__inputs-input" type="text" placeholder="Email">
+          </div>
+          <div class="form__inputs">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input class="form__inputs-input" type="password" placeholder="Password">
+          </div>
+          <button class="form__buttons">REGISTRARSE</button>
+        </form>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
