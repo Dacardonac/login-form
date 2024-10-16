@@ -2,10 +2,15 @@
   width: 800px;
   height: 500px;
   display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 
   &__form {
-    border: 1px solid black;
     width: 100%;
+    overflow: hidden;
     }
 
   .form {
@@ -14,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.4s ease-in;
 
     &__title {
       font-size: 30px;
@@ -80,8 +86,82 @@
       border-radius: 5px;
       cursor: pointer;
       margin-top: 10px;
-      background-color: #3AB397;
+      background-color: #367D68;
       color: white;
+
+      &-light {
+        background-color: #31a8ac;
+      }
     }
+  }
+
+  .sign-up {
+    transform: translateX(-100%);
+  }
+
+  &__welcome {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: #367D68;
+    transition: transform 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 50% 0 0 50%;
+
+    .welcome {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 0 50px;
+      color: white;
+      transition: transform 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+
+      &__title {
+        font-size: 40px;
+      }
+
+      &__paragraph {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      &__buttons {
+        border: 2px solid white;
+        background-color: transparent;
+      }
+    }
+
+    .welcome-sign-in {
+      transform: translateX(100%);
+    }
+  }
+}
+
+.toggle {
+  .sign-in {
+    transform: translateX(100%);
+  }
+
+  .sign-up {
+    transform: translateX(0);
+  }
+
+  .welcome-sign-in {
+    transform: translateX(0);
+  }
+
+  .welcome-sign-up {
+    transform: translateX(-100%);
+  }
+
+  .container__welcome {
+    transform: translateX(0);
+    border-radius: 0 50% 50% 0;
+    background-color: #31a8ac;
   }
 }
