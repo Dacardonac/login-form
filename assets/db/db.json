@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "4bd9",
+      "username": "Daniel Cano",
+      "email": "daniel@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "5e95",
+      "username": "Claudia Cardona",
+      "email": "claudia@gmail.com",
+      "password": "14569873"
+    },
+    {
+      "id": "6c73",
+      "username": "Jairo Valderrama",
+      "email": "jairo@gmail.com",
+      "password": "097169104598"
+    },
+    {
+      "id": "f852",
+      "username": "Sara Barbosa",
+      "email": "sara@gmail.com",
+      "password": "546165215615"
+    }
+  ]
+}
