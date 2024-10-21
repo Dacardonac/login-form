@@ -2,27 +2,33 @@
   "users": [
     {
       "id": "4bd9",
-      "username": "Daniel Cano",
+      "username": "Daniel",
       "email": "daniel@gmail.com",
       "password": "12345678"
     },
     {
       "id": "5e95",
-      "username": "Claudia Cardona",
+      "username": "Claudia",
       "email": "claudia@gmail.com",
       "password": "14569873"
     },
     {
       "id": "6c73",
-      "username": "Jairo Valderrama",
+      "username": "Jairo",
       "email": "jairo@gmail.com",
       "password": "097169104598"
     },
     {
       "id": "f852",
-      "username": "Sara Barbosa",
+      "username": "Sara",
       "email": "sara@gmail.com",
       "password": "546165215615"
+    },
+    {
+      "id": "4b42",
+      "username": "oscar",
+      "email": "oscar@gmail.com",
+      "password": "1245789630"
     }
   ]
 }
